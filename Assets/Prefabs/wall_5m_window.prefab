@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 3035243061687015737}
   - component: {fileID: 3583101472891923613}
   - component: {fileID: 6681746447180970999}
+  - component: {fileID: 2219792994173695986}
+  - component: {fileID: 6687795611293810353}
+  - component: {fileID: 2447731708804011247}
+  - component: {fileID: 7080209360102063849}
   m_Layer: 0
   m_Name: wall_5m_window
   m_TagString: Untagged
@@ -81,3 +85,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2219792994173695986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112801008561035566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999993, y: 0.0020000006, z: 0.0068801623}
+  m_Center: {x: 0, y: -3.8579095e-17, z: 0.009325101}
+--- !u!65 &6687795611293810353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112801008561035566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999993, y: 0.0020000006, z: 0.006615009}
+  m_Center: {x: 0, y: 4.0051265e-17, z: -0.0091925}
+--- !u!65 &2447731708804011247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112801008561035566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019462232, y: 0.0020000006, z: 0.011689779}
+  m_Center: {x: -0.015381045, y: -1.8528828e-24, z: 5.9604643e-10}
+--- !u!65 &7080209360102063849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112801008561035566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019358685, y: 0.0020000006, z: 0.011759103}
+  m_Center: {x: 0.015320565, y: -1.7029374e-19, z: 0.000034661294}
