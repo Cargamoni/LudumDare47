@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public enum Screens
-{
+public enum Screens {
     Main,
     Settings,
     InGame,
@@ -12,8 +9,8 @@ public enum Screens
     Lose
 }
 
-public class UIManager : MonoBehaviour
-{
+public class UIManager : MonoBehaviour {
+
     private int currentScreenIndex;
     public GameObject[] screens;
     public static UIManager instance;
@@ -23,10 +20,10 @@ public class UIManager : MonoBehaviour
         instance = this;
     }
 
-    public void ChangeScreen(int screen)
-    {
+    public void ChangeScreen(int screen) {
         screens[currentScreenIndex].SetActive(false);
         screens[screen].SetActive(true);
         currentScreenIndex = screen;
     }
+
 }
