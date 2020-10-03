@@ -16,6 +16,12 @@ public class UIManager : MonoBehaviour
 {
     private int currentScreenIndex;
     public GameObject[] screens;
+    public static UIManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     public void ChangeScreen(int screen)
     {
