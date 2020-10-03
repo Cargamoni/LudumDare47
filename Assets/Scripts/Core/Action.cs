@@ -7,10 +7,6 @@ public class Action : MonoBehaviour {
         return null;
     }
 
-    public virtual float getVolume() {
-        return 0.5f;
-    }
-
     public virtual string getText() {
         return "kullan";
     }

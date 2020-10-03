@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7978475348818127102}
+  - component: {fileID: 2668874065548474247}
   - component: {fileID: 27346292573392577}
   - component: {fileID: 4034452525931608984}
+  - component: {fileID: 1283614832319718603}
   m_Layer: 0
   m_Name: door
   m_TagString: Untagged
@@ -25,13 +27,29 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8604078804436506001}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 7.44, y: 1.018, z: -11.889}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0231809, y: -0.00103, z: -0.0024839}
+  m_LocalScale: {x: 1.6954671, y: 1, z: 1.0033021}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &2668874065548474247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604078804436506001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14da3e8cbd3b50c4bac466e6aabe6403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locked: 1
+  opened: 0
+  lockedSound: {fileID: 0}
+  normalSound: {fileID: 0}
 --- !u!33 &27346292573392577
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -59,7 +77,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d68a25e8b6d36034c8d59ab59c916f74, type: 2}
+  - {fileID: 2100000, guid: 8d9b5c47cc7518142968bb47c7d22332, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,3 +99,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1283614832319718603
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604078804436506001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008890478, y: 0.002548456, z: 0.01990761}
+  m_Center: {x: 0.004348281, y: 0.00042645677, z: 0.000013005456}

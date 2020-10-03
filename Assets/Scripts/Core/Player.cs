@@ -12,16 +12,20 @@ public class Player : MonoBehaviour {
     private RaycastHit hit;
     private Rigidbody objectBody;
     private Vector3 objectPosition;
+    private bool isDeath;
 
     private void Awake() {
         instance = this;
     }
 
+    public void die() {
+        objectBody.isKinematic = false;
+        enabled = false;
+    }
+
     private void Update() {
 
-        //if (Death.instance.isDeath) {
-        //    return;
-        //}
+        if (isDeath) return;
 
         //kalp hızı
         //var dist = Vector3.Distance(transform.position, Zombie.instance.transform.position);
