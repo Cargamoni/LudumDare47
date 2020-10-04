@@ -6,16 +6,21 @@ public class Player : MonoBehaviour {
 
     public static Player instance;
 
+    public Transform exit;
+
     public Camera cam;
     public AudioSource heartbeat;
+    public Material mat;
 
     private RaycastHit hit;
     private Rigidbody objectBody;
     private Vector3 objectPosition;
     private bool isDeath;
+    private float exitDistance;
 
     private void Awake() {
         instance = this;
+        exitDistance = Vector3.Distance(transform.position, exit.position);
     }
 
     public void die() {
@@ -26,6 +31,9 @@ public class Player : MonoBehaviour {
     private void Update() {
 
         if (isDeath) return;
+
+        var blood = Vector3.Distance(transform.position, exit.position) / exitDistance;
+        mat.SetFloat("_Blood", blood);
 
         //kalp hızı
         //var dist = Vector3.Distance(transform.position, Zombie.instance.transform.position);
