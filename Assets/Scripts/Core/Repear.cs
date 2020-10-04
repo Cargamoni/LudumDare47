@@ -13,10 +13,10 @@ public class Repear : MonoBehaviour{
         transform.position = Vector3.MoveTowards(transform.position, forwardPos, Time.deltaTime * 10f);
 
         var dir = transform.position - Player.instance.transform.position;
-        dir.z = 0;
-        dir.y = -dir.y;
-        transform.rotation = Quaternion.LookRotation( transform.TransformDirection(dir));
-
+        transform.forward = Vector3.up;
+        float angle = Vector3.SignedAngle(transform.up, dir,Vector3.forward);
+        
+        transform.Rotate(transform.up, angle, Space.Self);
     }
 
-}
+}            
