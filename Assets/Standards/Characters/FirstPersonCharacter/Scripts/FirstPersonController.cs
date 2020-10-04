@@ -56,7 +56,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
 
         // Update is called once per frame
         private void Update() {
-
+            if (!GameManager.IsPlaying()) return;
             //if (Death.instance.isDeath || Dialog.singleton.isTalking) {
             //    return;
             //}
