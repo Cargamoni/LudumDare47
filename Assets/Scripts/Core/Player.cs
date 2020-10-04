@@ -37,6 +37,7 @@ public class Player : MonoBehaviour {
         GetComponent<CharacterController>().enabled = false;
         GetComponent<FirstPersonController>().enabled = false;
         cam.GetComponent<Cam>().enabled = false;
+        UIManager.instance.ChangeScreen((int)Screens.Lose);
     }
 
     private void Update() {

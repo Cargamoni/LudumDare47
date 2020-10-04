@@ -6,6 +6,7 @@ public enum Screens {
     Settings,
     InGame,
     About,
+    End,
     Win,
     Lose
 }
@@ -19,15 +20,13 @@ public class UIManager : MonoBehaviour {
     public Slider musicVolume;
     public Slider sfxVolume;
 
-
-    private void Awake()
-    {
+    private void Awake() {
         instance = this;
-        
     }
 
-    public void Start()
-    {
+
+    private void Start() {
+
         masterVolume.onValueChanged.AddListener(OnMasterVolumeChanged);
         musicVolume.onValueChanged.AddListener(OnMusicVolumeChanged);
         sfxVolume.onValueChanged.AddListener(OnSfxVolumeChanged);
@@ -35,6 +34,7 @@ public class UIManager : MonoBehaviour {
         masterVolume.value = AudioManager.instance.getMasterVolume();
         musicVolume.value = AudioManager.instance.getMusicVolume();
         sfxVolume.value = AudioManager.instance.getSfxVolume();
+
     }
 
     public void ChangeScreen(int screen) {
@@ -43,22 +43,16 @@ public class UIManager : MonoBehaviour {
         currentScreenIndex = screen;
     }
 
-    public void OnMasterVolumeChanged(float value)
-    {
+    public void OnMasterVolumeChanged(float value) {
         AudioManager.instance.setMasterVolume(value);
-        Debug.Log(value);
     }
 
-    public void OnMusicVolumeChanged(float value)
-    {
+    public void OnMusicVolumeChanged(float value) {
         AudioManager.instance.setMusicVolume(value);
-        Debug.Log(value);
     }
 
-    public void OnSfxVolumeChanged(float value)
-    {
+    public void OnSfxVolumeChanged(float value) {
         AudioManager.instance.setSfxVolume(value);
-        Debug.Log(value);
     }
 
 }
