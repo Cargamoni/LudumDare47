@@ -12,7 +12,7 @@ public class Force : MonoBehaviour{
             if (effect != null) Instantiate(effect, transform.position, Quaternion.identity);
             var rb = GetComponent<Rigidbody>();
             rb.isKinematic = false;
-            rb.AddForce(new Vector3(Random.Range(-100f, +100f), 500f, Random.Range(-100f, +100f)));
+            rb.AddForce(new Vector3(Random.Range(-100f, +100f), 300f, Random.Range(-100f, +100f)));
             Destroy(this);
         }
     }
