@@ -67,7 +67,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
-    - _Blood: 0.95514894
+    - _Blood: 1.8144205
     - _BumpScale: 1
     - _Cull: 2
     - _Cutoff: 0.5
