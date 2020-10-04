@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Player : MonoBehaviour {
 
@@ -12,6 +13,9 @@ public class Player : MonoBehaviour {
     public AudioSource heartbeat;
     public Material mat;
 
+    private Rigidbody rb;
+    public Collider camCollider;
+
     private RaycastHit hit;
     private Rigidbody objectBody;
     private Vector3 objectPosition;
@@ -21,16 +25,24 @@ public class Player : MonoBehaviour {
     private void Awake() {
         instance = this;
         exitDistance = Vector3.Distance(transform.position, exit.position);
+        rb = GetComponent<Rigidbody>();
     }
 
     public void die() {
-        objectBody.isKinematic = false;
+        if (isDeath) return;
+        rb.isKinematic = false;
         enabled = false;
+        isDeath = true;
+        camCollider.enabled = true;
+        GetComponent<CharacterController>().enabled = false;
+        GetComponent<FirstPersonController>().enabled = false;
+        cam.GetComponent<Cam>().enabled = false;
     }
 
     private void Update() {
 
         if (isDeath) return;
+        if (Input.GetKeyDown(KeyCode.K)) die();
 
         var blood = Vector3.Distance(transform.position, exit.position) / exitDistance;
         mat.SetFloat("_Blood", blood);

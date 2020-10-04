@@ -35,9 +35,7 @@ public class GameManager : MonoBehaviour
                 UIManager.instance.ChangeScreen((int)Screens.Main);
                 break;
             case GameStates.Playing:
-                Debug.Log(m_LockCursor);
                 ToggleCursor();
-                Debug.Log(m_LockCursor);
                 UIManager.instance.ChangeScreen((int)Screens.InGame);
                 break;
             case GameStates.Win:

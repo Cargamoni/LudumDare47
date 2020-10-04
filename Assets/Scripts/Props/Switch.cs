@@ -2,25 +2,32 @@
 
 public class Switch : Action {
 
-    public bool on;
-    public GameObject[] targets;
-    public AudioClip sound;
 
-    public override AudioClip getSound() {
-        return sound;
-    }
+    public GameObject explotionPrefab;
+    public float triggerRadius = 2f;
 
-    public override string getText() {
-        return on ? "Turn Off" : "Turn On";
-    }
+    public GameObject effect;
+    public Rigidbody rb;
+    public LayerMask rayMask;
 
-    public override void invoke() {
-        on = !on;
-        if (targets != null) {
-            foreach (var i in targets) {
-                i.SetActive(!i.activeSelf);
+    void Update() {
+
+        if (Vector3.Distance(transform.position, Player.instance.transform.position) < triggerRadius) {
+            if (Physics.Linecast(transform.position, Player.instance.transform.position, rayMask)) {
+
+                effect.SetActive(true);
+                rb.isKinematic = false;
+                Instantiate(explotionPrefab, transform.position, Quaternion.identity);
+
+                Player.instance.die();
+                rb.AddExplosionForce(10f, Random.insideUnitSphere, 0.5f);
+
+                Destroy(this);
+
             }
         }
+
     }
+
 
 }
