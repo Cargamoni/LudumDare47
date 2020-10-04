@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Door : Action {
 
     public bool locked;
     public bool opened;
+    public GameObject repear;
 
     public AudioClip lockedSound;
     public AudioClip normalSound;
@@ -30,6 +29,13 @@ public class Door : Action {
             angle + (opened ? -90f : 0f),
             transform.eulerAngles.z
         );
+    }
+
+    private void Update() {
+        if(repear != null && !repear.activeSelf && Vector3.Distance(transform.position, Player.instance.transform.position) < 2f) {
+            if (!opened) invoke();
+            repear.SetActive(true);
+        }
     }
 
 }
