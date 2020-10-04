@@ -43,6 +43,9 @@ public class Player : MonoBehaviour {
 
         //al
         var actionText = "";
+
+        if (!GameManager.IsPlaying()) return;
+        
         if (objectBody == null) {
 
             if (Physics.Raycast(cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0)), out hit, 2f)) {
