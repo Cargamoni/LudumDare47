@@ -171,7 +171,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 38660176732006107, guid: 33f78e9af63ce6d46b728b4d7114837a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 38660176732006107, guid: 33f78e9af63ce6d46b728b4d7114837a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -217,6 +217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall_5m_kirilmis
       objectReference: {fileID: 0}
+    - target: {fileID: 4311968999114144715, guid: 33f78e9af63ce6d46b728b4d7114837a, type: 3}
+      propertyPath: triggerRadius
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f78e9af63ce6d46b728b4d7114837a, type: 3}
 --- !u!4 &3489316859576621039 stripped
@@ -233,7 +237,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4248983132946911683, guid: de818e59a6e39c24b80364c14a3b9e0b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4248983132946911683, guid: de818e59a6e39c24b80364c14a3b9e0b, type: 3}
       propertyPath: m_LocalPosition.y
