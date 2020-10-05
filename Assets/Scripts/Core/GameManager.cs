@@ -28,11 +28,11 @@ public class GameManager : MonoBehaviour {
         currentState = (GameStates)state;
         switch ((GameStates)state) {
             case GameStates.Menu:
-                ToggleCursor(false);
+                ToggleCursor();
                 UIManager.instance.ChangeScreen((int)Screens.Main);
                 break;
             case GameStates.Playing:
-                ToggleCursor(true);
+                ToggleCursor();
                 UIManager.instance.ChangeScreen((int)Screens.InGame);
                 break;
             case GameStates.Win:
@@ -46,10 +46,10 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    private void ToggleCursor(bool locked) {
-        Cursor.lockState = locked ? CursorLockMode.Locked : CursorLockMode.None;
-        Cursor.visible = !locked;
-        m_LockCursor = locked;
+    private void ToggleCursor() {
+        Cursor.lockState = m_LockCursor ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !m_LockCursor;
+        m_LockCursor = !m_LockCursor;
     }
 
     public static bool IsOnMenu() {
