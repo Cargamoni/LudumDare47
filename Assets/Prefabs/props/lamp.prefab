@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explotionPrefab: {fileID: 1828176872806910, guid: 64891a0eb28db934898420d80ca07cb3, type: 3}
-  triggerRadius: 1.25
+  triggerRadius: 2
   lightGo: {fileID: 4805178658490168029}
   sparkGo: {fileID: 4318773487782073021}
   lampRb: {fileID: 6692889743357560513}

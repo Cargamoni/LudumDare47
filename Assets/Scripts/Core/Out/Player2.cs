@@ -21,7 +21,7 @@ public class Player2 : MonoBehaviour{
     private IEnumerator dieCoroutine() {
         fade.gameObject.SetActive(true);
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("Mustafa");
+        SceneManager.LoadScene("Play");
     }
 
 }
