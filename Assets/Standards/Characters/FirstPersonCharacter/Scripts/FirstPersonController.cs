@@ -39,7 +39,6 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         private float m_StepCycle;
         private float m_NextStep;
         private bool m_Jumping;
-        public bool isPlaying;
 
         // Use this for initialization
         private void Start() {
@@ -54,11 +53,10 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             m_MouseLook.Init(transform, m_Camera.transform);
         }
 
+
         // Update is called once per frame
         private void Update() {
-
-            if (!isPlaying && !GameManager.IsPlaying()) return;
-
+            if (!GameManager.IsPlaying()) return;
             //if (Death.instance.isDeath || Dialog.singleton.isTalking) {
             //    return;
             //}
