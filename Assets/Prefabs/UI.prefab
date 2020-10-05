@@ -153,7 +153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Death Info
+  m_Text: 
 --- !u!1 &1082291816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b6b255a049ccd41814971a5e3b89d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
   m_LockCursor: 0
 --- !u!223 &1733552680305878345
 Canvas:

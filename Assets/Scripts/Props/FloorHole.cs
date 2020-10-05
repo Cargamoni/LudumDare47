@@ -13,9 +13,9 @@ public class FloorHole : MonoBehaviour {
 
         Instantiate(effectPrefab, transform.position, Quaternion.identity);
 
-        Player.instance.die();
-
-        //yield return new WaitForSeconds(0.5f);
+        if (other.CompareTag("Player")) {
+            Player.instance.die();
+        }
 
         while (transform.position.y < 1f ) {
             transform.position += new Vector3(0f, -16f * Time.deltaTime, 0f);
