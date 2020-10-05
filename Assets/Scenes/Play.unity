@@ -1579,9 +1579,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exit: {fileID: 1168906615}
   cam: {fileID: 8872880387073751313}
-  heartbeat: {fileID: 0}
+  heartbeat: {fileID: 8872880387079807697}
   mat: {fileID: 2100000, guid: 8d9b5c47cc7518142968bb47c7d22332, type: 2}
   camCollider: {fileID: 8872880387073817394}
+  walkSpeed: 2
+  runSpeed: 5
 --- !u!1 &8872880387073817393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,9 +1734,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ba75a278b17596448a40b13ceee3c4cf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f86a8aad25ee41a409d9a7c13c198c5d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
