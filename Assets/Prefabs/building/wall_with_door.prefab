@@ -270,6 +270,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.007051523
       objectReference: {fileID: 0}
+    - target: {fileID: 4578005155026912197, guid: cfe690b1389fd9048ac2639ba4aa9ebb, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 41e4f1d2fe0e9ff4c99fa3351f2b88c0, type: 3}
     - target: {fileID: 6927496714800093573, guid: cfe690b1389fd9048ac2639ba4aa9ebb, type: 3}
       propertyPath: m_IsActive
       value: 1

@@ -388,7 +388,6 @@ GameObject:
   - component: {fileID: 1226260178582334018}
   - component: {fileID: 2924639030673783380}
   - component: {fileID: 4815847850198826872}
-  - component: {fileID: 2908689127297318172}
   m_Layer: 0
   m_Name: ICUdolabi
   m_TagString: Pickup
@@ -488,20 +487,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2908689127297318172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511502843989093948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8917f0dfc57f2894a9c789bf719a05ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceSound: {fileID: 8300000, guid: 657c5583c3011cb46a4dc683da2ae34a, type: 3}
-  scale: 0.5
 --- !u!1 &1247238107154463634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1117,6 @@ GameObject:
   - component: {fileID: 1670774096890937255}
   - component: {fileID: 7768335615783625681}
   - component: {fileID: 7190934621399361961}
-  - component: {fileID: 4729210935805913412}
   m_Layer: 0
   m_Name: yatakMasasi
   m_TagString: Pickup
@@ -1232,20 +1216,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4729210935805913412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6522649120380790982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8917f0dfc57f2894a9c789bf719a05ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceSound: {fileID: 8300000, guid: 4cde60af9fff433419b561914184028c, type: 3}
-  scale: 0.5
 --- !u!1 &6761825133546894968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,7 +1837,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerRadius: 0.75
-  explotion: 1
   effect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
 --- !u!33 &6900884609731506544
 MeshFilter:

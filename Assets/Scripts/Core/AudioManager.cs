@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour {
             sfxSource.rolloffMode = AudioRolloffMode.Linear;
             sfxSource.minDistance = 2;
             sfxSource.maxDistance = 12;
-            sfxSource.outputAudioMixerGroup = sfxAudioMixerGroup;
+            //sfxSource.outputAudioMixerGroup = sfxAudioMixerGroup;
             sfxSources[i] = sfxSource;
 
         }
@@ -47,11 +47,11 @@ public class AudioManager : MonoBehaviour {
 
         musicSource1 = musicGo.AddComponent<AudioSource>();
         musicSource1.loop = true;
-        musicSource1.outputAudioMixerGroup = musicAudioMixerGroup;
+        //musicSource1.outputAudioMixerGroup = musicAudioMixerGroup;
 
         musicSource2 = musicGo.AddComponent<AudioSource>();
         musicSource2.loop = true;
-        musicSource2.outputAudioMixerGroup = musicAudioMixerGroup;
+        //musicSource2.outputAudioMixerGroup = musicAudioMixerGroup;
 
     }
 

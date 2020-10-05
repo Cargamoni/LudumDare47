@@ -1734,9 +1734,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f86a8aad25ee41a409d9a7c13c198c5d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3ece22aa977496f4c91b17925798cc34, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.78
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1887,10 +1887,10 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_UseHeadBob: 0
+  m_UseHeadBob: 1
   m_HeadBob:
-    HorizontalBobRange: 0.1
-    VerticalBobRange: 0.1
+    HorizontalBobRange: 0.01
+    VerticalBobRange: 0.05
     Bobcurve:
       serializedVersion: 2
       m_Curve:
@@ -1942,14 +1942,16 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    VerticaltoHorizontalRatio: 2
+    VerticaltoHorizontalRatio: 3
   m_JumpBob:
     BobDuration: 0.2
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: 3d7591070c7aa1b4aafa913adc0a6158, type: 3}
+  - {fileID: 8300000, guid: ce160e4123d233e43aebc31e19558045, type: 3}
+  - {fileID: 8300000, guid: c7cac4718a44b854291794fb245d0de2, type: 3}
+  - {fileID: 8300000, guid: eaf218761e01ba244a675fac5cda8939, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
   isPlaying: 0

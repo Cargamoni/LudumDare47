@@ -7,7 +7,8 @@ public enum GameStates {
     Menu,
     Playing,
     Win,
-    Lose
+    Lose,
+    End
 }
 
 public class GameManager : MonoBehaviour {
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ChangeGameState(int state) {
+
         currentState = (GameStates)state;
         switch ((GameStates)state) {
             case GameStates.Menu:
@@ -37,6 +39,9 @@ public class GameManager : MonoBehaviour {
                 break;
             case GameStates.Win:
                 UIManager.instance.ChangeScreen((int)Screens.Win);
+                break;
+            case GameStates.End:
+                UIManager.instance.ChangeScreen((int)Screens.End);
                 break;
             case GameStates.Lose:
                 UIManager.instance.ChangeScreen((int)Screens.Lose);
