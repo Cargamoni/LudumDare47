@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 
@@ -49,6 +50,11 @@ public class Player : MonoBehaviour {
 
         if (isDeath) return;
         if (Input.GetKeyDown(KeyCode.K)) die();
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            GameManager.currentState = GameStates.Menu;
+            SceneManager.LoadScene("Play");
+        }
 
         if (objectBody != null) {
             controller.m_WalkSpeed = walkSpeed * 0.25f;
