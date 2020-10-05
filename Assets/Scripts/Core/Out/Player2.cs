@@ -15,7 +15,7 @@ public class Player2 : MonoBehaviour{
     public void die() {
         if (isDead) return;
         isDead = true;
-        Debug.Log("öl");
+
         StartCoroutine(dieCoroutine());
     }
 
@@ -23,7 +23,10 @@ public class Player2 : MonoBehaviour{
         fade.gameObject.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         Time.timeScale = 1f;
+
+        GameManager.currentState = GameStates.Playing;
         SceneManager.LoadScene("Play");
+
     }
 
 }
