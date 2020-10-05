@@ -15,6 +15,7 @@ public class Player2 : MonoBehaviour{
     public void die() {
         if (isDead) return;
         isDead = true;
+        Debug.Log("öl");
         StartCoroutine(dieCoroutine());
     }
 

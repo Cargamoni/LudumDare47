@@ -3,7 +3,7 @@
 public class Repear : MonoBehaviour{
 
     private Vector3 forwardPos;
-    public Transform orak;
+    public AudioClip sound;
 
     void Start() {
         forwardPos = transform.position + transform.up * -2f;
@@ -20,6 +20,7 @@ public class Repear : MonoBehaviour{
         transform.Rotate(transform.up, angle, Space.Self);
 
         if(Vector3.Distance(transform.position, Player.instance.transform.position) < 1f) {
+            AudioManager.instance.playSfx(sound);
             Player.instance.die();
         }
 

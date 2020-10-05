@@ -159,7 +159,8 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             // excluding sound at index 0
             int n = Random.Range(1, m_FootstepSounds.Length);
             AudioClip stepSound = m_FootstepSounds[n];
-            //Noise.instance.addNoise(stepSound, transform.position, m_IsWalking ? 0.1f : 0.4f);
+
+            AudioManager.instance.playSfx(stepSound);
 
             // move picked sound to index 0 so it's not picked next time
             m_FootstepSounds[n] = m_FootstepSounds[0];
