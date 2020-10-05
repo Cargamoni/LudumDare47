@@ -12,7 +12,7 @@ public class Fade : MonoBehaviour {
         var rawImage = GetComponent<Image>();
         var t = 0f;
         while (true) {
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             rawImage.color = Color.Lerp(start, end, t / duration);
             yield return null;
         }
