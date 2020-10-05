@@ -21,6 +21,7 @@ public class Player2 : MonoBehaviour{
     private IEnumerator dieCoroutine() {
         fade.gameObject.SetActive(true);
         yield return new WaitForSeconds(0.5f);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Play");
     }
 

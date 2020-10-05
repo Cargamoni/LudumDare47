@@ -49,7 +49,7 @@ public class Player : MonoBehaviour {
         mat.SetFloat("_Blood", blood);
 
 
-        if (transform.position.y < -5) die();
+        if (transform.position.y < 0) die();
 
         //kalp hızı
         //var dist = Vector3.Distance(transform.position, Zombie.instance.transform.position);
@@ -104,6 +104,7 @@ public class Player : MonoBehaviour {
 
         //bırak
         else if (Input.GetMouseButtonUp(0)) {
+            objectBody.isKinematic = false;
             objectBody.useGravity = true;
             objectBody.transform.SetParent(null);
             objectBody = null;
@@ -111,6 +112,7 @@ public class Player : MonoBehaviour {
 
         //fırlat
         else if(Input.GetMouseButtonDown(1)) {
+            objectBody.isKinematic = false;
             objectBody.useGravity = true;
             objectBody.transform.SetParent(null);
             objectBody.AddForce(Player.instance.cam.transform.forward * 500f, ForceMode.Acceleration);
