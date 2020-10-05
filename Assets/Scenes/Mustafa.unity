@@ -417,7 +417,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2729171102894684143, guid: 6d9a412136da8dc4b9582c14211d1376, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818489093964116520, guid: 6d9a412136da8dc4b9582c14211d1376, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1344,6 +1344,10 @@ PrefabInstance:
     - target: {fileID: 8866045362427281617, guid: 0aca7423bf0725c4590ce009d95e0755, type: 3}
       propertyPath: m_Name
       value: firstRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207056017824420279, guid: 0aca7423bf0725c4590ce009d95e0755, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0aca7423bf0725c4590ce009d95e0755, type: 3}
