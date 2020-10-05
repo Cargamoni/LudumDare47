@@ -107,6 +107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 4073396191222895861, guid: 322bd2bb1dc44cb458d6898a18b18ca7, type: 3}
+      propertyPath: triggerRadius
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4387469630723152723, guid: 322bd2bb1dc44cb458d6898a18b18ca7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -151,7 +155,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4073396191222895861, guid: 322bd2bb1dc44cb458d6898a18b18ca7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 322bd2bb1dc44cb458d6898a18b18ca7, type: 3}
 --- !u!4 &4849543733785189692 stripped
 Transform:

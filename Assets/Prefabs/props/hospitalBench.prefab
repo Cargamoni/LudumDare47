@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6535638439697982870}
-  - component: {fileID: 2487797953340153559}
+  - component: {fileID: 158447937944127166}
   - component: {fileID: 3358543334554838766}
   - component: {fileID: 6069646062141581866}
   - component: {fileID: 8928247559802988832}
   - component: {fileID: 2135209422146421485}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hospitalBench
   m_TagString: Pickup
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2487797953340153559
+--- !u!114 &158447937944127166
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,15 +44,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7900129909527604069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f78fe11dd86eff04b89b61b60c8fce6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 23e544c6301aa2044bd471812b30f78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerRadius: 2
-  explotion: 0
-  effect: {fileID: 0}
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 1280
 --- !u!33 &3358543334554838766
 MeshFilter:
   m_ObjectHideFlags: 0

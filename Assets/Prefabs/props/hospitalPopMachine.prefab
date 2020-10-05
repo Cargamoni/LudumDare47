@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 356106196656871204}
   - component: {fileID: 1673677988639321645}
   - component: {fileID: 3592326890870812707}
-  m_Layer: 0
+  - component: {fileID: 4651158302677081006}
+  m_Layer: 10
   m_Name: hospitalPopMachine
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +50,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerRadius: 2
   explotion: 1
-  explotionOffset: {x: 0, y: 0, z: 0}
   effect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
   layerMask:
     serializedVersion: 2
@@ -132,3 +132,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008718658, y: 0.00961344, z: 0.020738289}
   m_Center: {x: 0, y: 0.00044742005, z: 0.00021668623}
+--- !u!65 &4651158302677081006
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4894673713322768297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008718658, y: 0.018171554, z: 0.020738289}
+  m_Center: {x: 0, y: 0.0047264523, z: 0.00021668553}

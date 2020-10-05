@@ -1,29 +1,31 @@
 ﻿using UnityEngine;
 
-public class Explode : MonoBehaviour {
+[RequireComponent(typeof(Rigidbody))]
+public class Explode : MonoBehaviour{
 
-    public GameObject explotionPrefab;
     public float triggerRadius = 2f;
-
     public GameObject effect;
-    public Rigidbody rb;
-    public LayerMask rayMask;
 
-    void Update() {
-        if (Vector3.Distance(transform.position, Player.instance.transform.position) < triggerRadius) {
-            if (Physics.Linecast(transform.position, Player.instance.transform.position, rayMask)) {
+    private void OnTriggerEnter(Collider other) {
 
-                effect.SetActive(true);
-                rb.isKinematic = false;
-                Instantiate(explotionPrefab, transform.position, Quaternion.identity);
+        if(other.CompareTag("Player") || other.CompareTag("Pickup")) { 
 
-                Player.instance.die();
-                rb.AddExplosionForce(10f, Random.insideUnitSphere, 0.5f);
+            var rb = GetComponent<Rigidbody>();
+            rb.isKinematic = false;
+            rb.AddForce(new Vector3(Random.Range(-200f, +200f), 300f, Random.Range(-200f, +200f)));
 
-                Destroy(this);
-
+            if (effect != null) {
+                Instantiate(effect, transform.position, Quaternion.identity);
             }
+
+            if (other.CompareTag("Player")) {
+                Player.instance.die();
+            }
+
+            Destroy(this);
+
         }
+
     }
 
 }

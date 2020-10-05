@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4930137590501282378}
   - component: {fileID: 6334708115999877530}
   - component: {fileID: 6334708115999877529}
-  m_Layer: 0
+  - component: {fileID: 3129464367673434253}
+  m_Layer: 10
   m_Name: paspas
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +113,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0038401175, y: 0.0017618771, z: 0.011443513}
   m_Center: {x: 0.000041360854, y: -0, z: 0}
+--- !u!114 &3129464367673434253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6334708115999877528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e544c6301aa2044bd471812b30f78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerRadius: 2

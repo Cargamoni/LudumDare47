@@ -505,6 +505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ceil_with_lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 5075314038903462160, guid: f498674d0e2e4b94fb8cde3301077d69, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5127905043431330458, guid: f498674d0e2e4b94fb8cde3301077d69, type: 3}
       propertyPath: triggerRadius
       value: 1

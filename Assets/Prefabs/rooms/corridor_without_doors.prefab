@@ -359,6 +359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hospitalBench (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7900129909527604069, guid: 3a6bfea9a86510848a2dd425acf40a46, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a6bfea9a86510848a2dd425acf40a46, type: 3}
 --- !u!4 &4376659679161138733 stripped

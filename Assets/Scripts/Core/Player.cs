@@ -48,6 +48,9 @@ public class Player : MonoBehaviour {
         var blood = Vector3.Distance(transform.position, exit.position) / exitDistance;
         mat.SetFloat("_Blood", blood);
 
+
+        if (transform.position.y < -5) die();
+
         //kalp hızı
         //var dist = Vector3.Distance(transform.position, Zombie.instance.transform.position);
         //var anxiety = 1f - Mathf.Clamp01(dist / 16f);

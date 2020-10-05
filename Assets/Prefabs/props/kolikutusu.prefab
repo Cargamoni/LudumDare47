@@ -9,14 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8261599566419411418}
-  - component: {fileID: 8905225742016596978}
   - component: {fileID: 8540451677987014861}
   - component: {fileID: 5131761708298183202}
   - component: {fileID: 3368784460720705303}
   - component: {fileID: 2690030693391617965}
-  m_Layer: 0
+  - component: {fileID: 704049031241353880}
+  m_Layer: 10
   m_Name: kolikutusu
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,23 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8905225742016596978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9085531457448146247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f78fe11dd86eff04b89b61b60c8fce6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerRadius: 1.5
-  effect: {fileID: 0}
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 1280
 --- !u!33 &8540451677987014861
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -130,3 +113,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &704049031241353880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9085531457448146247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e544c6301aa2044bd471812b30f78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerRadius: 2

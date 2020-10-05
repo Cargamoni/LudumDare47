@@ -19,10 +19,10 @@ public class Repear : MonoBehaviour{
         
         transform.Rotate(transform.up, angle, Space.Self);
 
-        if(Vector3.Distance(transform.position, Player.instance.transform.position) < 1.5f) {
+        if(Vector3.Distance(transform.position, Player.instance.transform.position) < 1f) {
             Player.instance.die();
         }
 
     }
 
-}            
+}
