@@ -7,6 +7,7 @@ public class Repear : MonoBehaviour{
 
     void Start() {
         forwardPos = transform.position + transform.up * -2f;
+        AudioManager.instance.playSfx(sound);
     }
 
     void Update(){
@@ -20,7 +21,6 @@ public class Repear : MonoBehaviour{
         transform.Rotate(transform.up, angle, Space.Self);
 
         if(Vector3.Distance(transform.position, Player.instance.transform.position) < 1f) {
-            AudioManager.instance.playSfx(sound);
             Player.instance.die();
         }
 
