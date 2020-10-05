@@ -21,11 +21,16 @@ public class Player : MonoBehaviour {
     private Vector3 objectPosition;
     private bool isDeath;
     private float exitDistance;
+    private FirstPersonController controller;
+
+    public float walkSpeed;
+    public float runSpeed;
 
     private void Awake() {
         instance = this;
         exitDistance = Vector3.Distance(transform.position, exit.position);
         rb = GetComponent<Rigidbody>();
+        controller = GetComponent<FirstPersonController>();
     }
 
     public void die() {
@@ -45,17 +50,23 @@ public class Player : MonoBehaviour {
         if (isDeath) return;
         if (Input.GetKeyDown(KeyCode.K)) die();
 
-        var blood = Vector3.Distance(transform.position, exit.position) / exitDistance;
+        if (objectBody != null) {
+            controller.m_WalkSpeed = walkSpeed * 0.25f;
+            controller.m_RunSpeed = runSpeed * 0.25f;
+        }
+        else {
+            controller.m_WalkSpeed = walkSpeed;
+            controller.m_RunSpeed = runSpeed;
+        }
+
+
+        var dist = Vector3.Distance(transform.position, exit.position);
+        var blood = Mathf.Clamp01(dist / exitDistance);
         mat.SetFloat("_Blood", blood);
+        heartbeat.pitch = 1f + blood * 0.5f;
 
 
         if (transform.position.y < 0) die();
-
-        //kalp hızı
-        //var dist = Vector3.Distance(transform.position, Zombie.instance.transform.position);
-        //var anxiety = 1f - Mathf.Clamp01(dist / 16f);
-        //heartbeat.volume = anxiety;
-        //heartbeat.pitch = 1f + anxiety * 0.5f;
 
         //al
         var actionText = "";
