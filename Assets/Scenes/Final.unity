@@ -5317,6 +5317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fade: {fileID: 1065825825}
   isDead: 0
+  dieSound: {fileID: 8300000, guid: 7d5b526f358ea25498ceeab35edb15d3, type: 3}
 --- !u!1 &4038503828316256454
 GameObject:
   m_ObjectHideFlags: 0
