@@ -34,15 +34,15 @@ public class Player : MonoBehaviour {
     }
 
     public void die() {
-        //if (isDeath) return;
-        //rb.isKinematic = false;
-        //enabled = false;
-        //isDeath = true;
-        //camCollider.enabled = true;
-        //GetComponent<CharacterController>().enabled = false;
-        //GetComponent<FirstPersonController>().enabled = false;
-        //cam.GetComponent<Cam>().enabled = false;
-        //UIManager.instance.ChangeScreen((int)Screens.Lose);
+        if (isDeath) return;
+        rb.isKinematic = false;
+        enabled = false;
+        isDeath = true;
+        camCollider.enabled = true;
+        GetComponent<CharacterController>().enabled = false;
+        GetComponent<FirstPersonController>().enabled = false;
+        cam.GetComponent<Cam>().enabled = false;
+        UIManager.instance.ChangeScreen((int)Screens.Lose);
     }
 
     private void Update() {
