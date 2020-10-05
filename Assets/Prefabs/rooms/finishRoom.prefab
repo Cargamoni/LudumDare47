@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 3675189726546824337}
   - component: {fileID: 3965068557136375235}
   - component: {fileID: 334851504414025104}
+  - component: {fileID: 992530162}
   m_Layer: 0
   m_Name: cikisKapisi
   m_TagString: Untagged
@@ -460,6 +461,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &992530162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194257869365284335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.00066994067, z: 0.017499998}
+  m_Center: {x: 0, y: -0.00022237658, z: -0.0037500006}
 --- !u!1 &3324090364971642410
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +826,7 @@ GameObject:
   - component: {fileID: 3562318861070642618}
   - component: {fileID: 5987844821198911592}
   - component: {fileID: 7979226319128579731}
+  - component: {fileID: 302105140}
   m_Layer: 0
   m_Name: lobiDesk
   m_TagString: Untagged
@@ -882,6 +897,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &302105140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718460459317556024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0072881547, y: 0.03014364, z: 0.016271751}
+  m_Center: {x: 0, y: 0, z: 9.313226e-10}
 --- !u!1 &9117804341331750970
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +921,7 @@ GameObject:
   - component: {fileID: 761092098529394796}
   - component: {fileID: 5078184950947823227}
   - component: {fileID: 761642203585674527}
+  - component: {fileID: 1800537896}
   m_Layer: 0
   m_Name: exit
   m_TagString: Untagged
@@ -963,6 +992,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1800537896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9117804341331750970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006420041, y: 0.00006452348, z: 0.002264759}
+  m_Center: {x: -0.0001232773, y: -0.0005931199, z: -0.0018638375}
 --- !u!1001 &143428500106277118
 PrefabInstance:
   m_ObjectHideFlags: 0
